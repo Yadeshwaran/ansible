@@ -1,0 +1,16 @@
+---
+- name: Enforce security guidelines
+  hosts: 172.31.25.56  # Target all hosts or specified IP address
+ 
+  tasks:
+    - name: Ensure security configurations are applied
+      shell: echo "Implement your security configurations here"
+      changed_when: false  # Set to true if you have specific checks
+ 
+    - name: Verify security configurations
+      shell: echo "Verify your security configurations here"
+ 
+    - name: Revert configurations if changed
+      shell: echo "Revert configurations if necessary"
+      changed_when: false  # Set to true if actual changes are reverted
+
